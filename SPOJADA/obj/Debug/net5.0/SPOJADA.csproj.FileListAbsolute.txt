@@ -1,0 +1,16 @@
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.exe
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.deps.json
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.runtimeconfig.json
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.runtimeconfig.dev.json
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.dll
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\ref\SPOJADA.dll
+E:\Hoctap\GitHUB\ADA\SPOJADA\bin\Debug\net5.0\SPOJADA.pdb
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.csproj.AssemblyReference.cache
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.AssemblyInfoInputs.cache
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.AssemblyInfo.cs
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.csproj.CoreCompileInputs.cache
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.dll
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\ref\SPOJADA.dll
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.pdb
+E:\Hoctap\GitHUB\ADA\SPOJADA\obj\Debug\net5.0\SPOJADA.genruntimeconfig.cache
