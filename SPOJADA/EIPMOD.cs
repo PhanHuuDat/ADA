@@ -53,9 +53,7 @@ namespace SPOJADA
             {
                 x = 1;
             }
-
             Console.WriteLine(x);
-
         }
     }
 
