@@ -16,7 +16,8 @@
 //            int arrayLength = reader.NextInt();
 //            int[] list = new int[arrayLength];
 //            int loop = 1 << arrayLength;
-//            List<int> binaryList = new List<int>();
+//            int compareValue = 1 << (arrayLength - 1);
+
 //            for (int i = 0; i < arrayLength; i++)
 //            {
 //                list[i] = reader.NextInt();
@@ -24,13 +25,11 @@
 //            result.Append(loop - 1).Append("\n");
 //            for (int i = 1; i < loop; i++)
 //            {
-//                binaryList = convertBinary(i);
-//                int trueLocate = list.Length - binaryList.Count;
-//                for (int j = 0; j < binaryList.Count; j++)
+//                for (int j = 0, value = i; j < arrayLength; j++, value <<= 1)
 //                {
-//                    if (binaryList[j] == 1)
+//                    if ((value & compareValue) == compareValue)
 //                    {
-//                        result.Append(list[trueLocate + j]).Append(" ");
+//                        result.Append(list[j]).Append(" ");
 //                    }
 //                }
 //                result.Append("\n");
@@ -48,16 +47,16 @@
 //            while (multiple < number)
 //            {
 //                i++;
-//                multiple = 1 << i;              
+//                multiple = 1 << i;
 //            }
-            
+
 //            while (i >= 0)
 //            {
 //                if (number - multiple >= 0)
 //                {
 //                    number -= multiple;
 //                    multiple = multiple >> 1;
-//                    binaryList.Add(1);                  
+//                    binaryList.Add(1);
 //                }
 //                else
 //                {
