@@ -6,36 +6,40 @@
 
 //namespace SPOJADA
 //{
-//    class EIUSUBSET
+//    class ADA_MID_Q1
 //    {
 //        static Reader reader = new Reader();
-//        static StringBuilder result = new StringBuilder();
 
 //        static void Main(string[] args)
 //        {
 //            int arrayLength = reader.NextInt();
-//            int[] list = new int[arrayLength];
-//            int loop = 1 << arrayLength;
-//            int compareValue = 1 << (arrayLength - 1);
-
+//            int pair = reader.NextInt();
+//            List<int> list = new List<int>();
+//            int result = 0;
+//            Dictionary<int, int> valuePairs = new Dictionary<int, int>();
 //            for (int i = 0; i < arrayLength; i++)
 //            {
-//                list[i] = reader.NextInt();
-//            }
-//            result.Append(loop - 1).Append("\n");
-//            for (int i = 1; i < loop; i++)
-//            {
-//                for (int j = 0, value = i; j < arrayLength; j++, value <<= 1)
+//                int number = reader.NextInt();
+//                int diff = number - pair;
+            
+//                if (valuePairs.TryGetValue(diff, out int value))
 //                {
-//                    if ((value & compareValue) == compareValue)
-//                    {
-//                        result.Append(list[j]).Append(" ");
-//                    }
+//                    result += value;
 //                }
-//                result.Append("\n");
+//                if (!valuePairs.TryGetValue(number, out value))
+//                {
+//                    valuePairs[number] = 1;
+//                }
+//                else
+//                {
+//                    valuePairs[number] += 1;
+//                }
 //            }
+
 //            Console.WriteLine(result);
 //        }
+
+
 //    }
 
 //    class Reader
