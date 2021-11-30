@@ -1,0 +1,5 @@
+E:\Hoctap\GitHUB\ADA\obj\Debug\net5.0\ADA.csproj.AssemblyReference.cache
+E:\Hoctap\GitHUB\ADA\obj\Debug\net5.0\ADA.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoctap\GitHUB\ADA\obj\Debug\net5.0\ADA.AssemblyInfoInputs.cache
+E:\Hoctap\GitHUB\ADA\obj\Debug\net5.0\ADA.AssemblyInfo.cs
+E:\Hoctap\GitHUB\ADA\obj\Debug\net5.0\ADA.csproj.CoreCompileInputs.cache

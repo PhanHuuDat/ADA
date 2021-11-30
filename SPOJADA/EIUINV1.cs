@@ -8,7 +8,7 @@
 //namespace SPOJADA
 //{
 
-//    class DauTu
+//    class EIUINV1
 //    {
 
 //        static Reader reader = new Reader();
@@ -44,7 +44,7 @@
 //                }
 //            }
 
-//            Console.WriteLine(Math.Round(left, 9));
+//            Console.WriteLine(Math.Round(left, 3));
 //        }
 //        static double getMoney(double rate)
 //        {
@@ -112,4 +112,5 @@
 //            return double.Parse(Next());
 //        }
 //    }
+
 //}
