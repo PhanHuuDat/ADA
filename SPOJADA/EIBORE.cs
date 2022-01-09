@@ -4,41 +4,48 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
-//namespace spojada
+//namespace SPOJADA
 //{
-//    class EIUJUMP
+//    class EIBORE
 //    {
 //        static Reader reader = new Reader();
 //        static void Main(string[] args)
 //        {
-//            int[] stones = new int[reader.nextInt()];
-//            int[] steps = new int[stones.Length];
-
-//            Dictionary<int, int> dictstones = new Dictionary<int, int>();
-
-//            for (int i = 0; i < stones.Length; i++)
+//            int noOfNumber = reader.nextInt();
+//            Dictionary<int, int> dict = new Dictionary<int, int>();
+//            List<int> key = new List<int>();
+//            long num1;
+//            long num2;
+//            long max;
+//            for (int i = 0; i < noOfNumber; i++)
 //            {
-//                stones[i] = reader.nextInt();
-//                steps[i] = stones.Length;               
-//            }
-//            steps[0] = 0;
-//            dictstones[stones[0]] = 0;
-//            for (int i = 1; i < stones.Length; i++)
-//            {
-//                if (steps[i] > steps[i-1] + 1)
+//                int number = reader.nextInt();
+//                if (dict.TryGetValue(number, out int value))
 //                {
-//                    steps[i] = steps[i-1] + 1;
+//                    dict[number] = value + number;
 //                }
-//                if (dictstones.TryGetValue(stones[i], out int location))
+//                else
 //                {
-//                    if (steps[i] > steps[location] + 1)
-//                    {
-//                        steps[i] = steps[location] + 1;
-//                    }
-//                }                
-//                dictstones[stones[i]] = i;
+//                    dict[number] = number;
+//                    key.Add(number);
+//                }
 //            }
-//            Console.WriteLine(steps[steps.Length - 1]);
+//            key.Sort();
+
+//            num1 = 0;
+//            num2 = Math.Max(num1, dict[key[0]]);
+//            max = num2;
+
+//            for (int i = 1; i < key.Count; i++)
+//            {
+//                max = Math.Max((dict[key[i]]) + (key[i - 1] + 1 == key[i] ? num1 : num2), num2);
+//                num1 = num2;
+//                num2 = max;
+//            }
+
+//            Console.WriteLine(num2);
+
+
 //        }
 //    }
 

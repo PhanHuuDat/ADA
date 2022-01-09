@@ -4,41 +4,30 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
-//namespace spojada
+//namespace SPOJADA
 //{
-//    class EIUJUMP
+//    class EISTORE
 //    {
 //        static Reader reader = new Reader();
 //        static void Main(string[] args)
 //        {
-//            int[] stones = new int[reader.nextInt()];
-//            int[] steps = new int[stones.Length];
+//            int noOfType = reader.nextInt();
+//            int money = reader.nextInt();
 
-//            Dictionary<int, int> dictstones = new Dictionary<int, int>();
+//            int[] findMin = new int[money + 1];
+//            Array.Fill(findMin, int.MaxValue-1);
+//            findMin[0] = 0;
 
-//            for (int i = 0; i < stones.Length; i++)
+//            for (int i = 0; i < noOfType; i++)
 //            {
-//                stones[i] = reader.nextInt();
-//                steps[i] = stones.Length;               
-//            }
-//            steps[0] = 0;
-//            dictstones[stones[0]] = 0;
-//            for (int i = 1; i < stones.Length; i++)
-//            {
-//                if (steps[i] > steps[i-1] + 1)
+//                int type = reader.nextInt();
+//                for(int j = type; j < money + 1; j++)
 //                {
-//                    steps[i] = steps[i-1] + 1;
+//                    findMin[j] = Math.Min(findMin[j], findMin[j-type]+1);
 //                }
-//                if (dictstones.TryGetValue(stones[i], out int location))
-//                {
-//                    if (steps[i] > steps[location] + 1)
-//                    {
-//                        steps[i] = steps[location] + 1;
-//                    }
-//                }                
-//                dictstones[stones[i]] = i;
 //            }
-//            Console.WriteLine(steps[steps.Length - 1]);
+
+//            Console.WriteLine(findMin[money]);
 //        }
 //    }
 
@@ -69,5 +58,4 @@
 //            return double.Parse(next());
 //        }
 //    }
-
 //}

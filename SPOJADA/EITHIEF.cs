@@ -6,33 +6,26 @@
 
 //namespace SPOJADA
 //{
-//    class EIUGAME
+//    class EITHIEF
 //    {
 //        static Reader reader = new Reader();
 //        static void Main(string[] args)
-//        {
-//            int col = reader.NextInt();
-//            long[] matrix = new long[reader.NextLong() + 1];
-//            long number1;
-//            long number2;
-//            matrix[0] = 0;
+//        {           
+//            long[] maxValues = new long[reader.NextInt() + 1];
+//            int maxWeight = reader.NextInt();
+            
+//            Array.Fill(maxValues, 0);
 
-//            for (int i = 1; i < matrix.Length; i++)
+//            for (int i = 0; i < maxValues.Length - 1; i++)
 //            {
-//                matrix[i] = matrix[i - 1] + reader.NextInt();
-//            }
-//            for (int index = 1; index < col; index++)
-//            {
-//                matrix[1] += reader.NextLong();
-//                for (int i = 2; i < matrix.Length; i++)
+//                int weight = reader.NextInt();
+//                int value = reader.NextInt();
+//                for (int j = maxWeight; j >= weight; j--)
 //                {
-//                    long number = reader.NextLong();
-//                    number1 = matrix[i - 1] + number;
-//                    number2 = matrix[i] + number;
-//                    matrix[i] = number1>number2?number1:number2;
+//                    maxValues[j] = Math.Max(maxValues[j], maxValues[j - weight] + value);
 //                }
 //            }
-//            Console.WriteLine(matrix[matrix.Length - 1]);
+//            Console.WriteLine(maxValues[maxValues.Length - 1]);
 //        }
 //    }
 
@@ -63,5 +56,4 @@
 //            return double.Parse(Next());
 //        }
 //    }
-
 //}
